@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".AddFriend"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:text="Personal Management App"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:textStyle="italic"
+        android:textSize="18dp"
+        android:text="Add New Friend to your Friend List"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="First Name"
+                    android:layout_margin="5dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/Black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/f_name"
+                    android:layout_margin="5dp"
+                    android:hint="Whats your first name:"
+                    android:textColor="@color/green"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/DARKGREEN"
+                    android:textSize="18sp"
+                    android:inputType="text"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_margin="5dp"
+                    android:text="Last Name"
+                    android:textSize="18dp"
+                    android:textColor="@color/Black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:layout_margin="5dp"
+                    android:id="@+id/l_name"
+                    android:hint="Whats your last name:"
+                    android:textColor="@color/green"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/DARKGREEN"
+                    android:textSize="18sp"
+                    android:inputType="text"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_margin="5dp"
+                    android:text="Gender"
+                    android:textSize="18dp"
+                    android:textColor="@color/Black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:layout_margin="5dp"
+                    android:id="@+id/gender"
+                    android:hint="Whats your gender:"
+                    android:textColor="@color/green"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/DARKGREEN"
+                    android:textSize="18sp"
+                    android:inputType="text"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_margin="5dp"
+                    android:text="Age"
+                    android:textSize="18dp"
+                    android:textColor="@color/Black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:layout_margin="5dp"
+                    android:id="@+id/age"
+                    android:hint="Enter your Age:"
+                    android:textColor="@color/green"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/DARKGREEN"
+                    android:textSize="18sp"
+                    android:inputType="number"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_margin="5dp"
+                    android:text="Address"
+                    android:textSize="18dp"
+                    android:textColor="@color/Black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:layout_margin="5dp"
+                    android:id="@+id/address"
+                    android:hint="Enter your address:"
+                    android:textColor="@color/green"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/DARKGREEN"
+                    android:textSize="18sp"
+                    android:inputType="text"/>
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_add"
+                android:text="Add Friend  ->"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="100dp"
+                android:layout_alignParentBottom="true"
+                android:padding="8dp"
+                android:background="@drawable/btn_style"
+                android:backgroundTint="@color/darkbluedark"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btn_view"
+                android:text="Show Friends  ->"
+                android:clickable="true"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_marginTop="50dp"
+                android:padding="8dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/btn_style"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
